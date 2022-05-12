@@ -1,0 +1,97 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "subtitle": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "100d1098-2a37-4530-90df-652c5f050289": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping Times",
+            "content": "<p>{{ product.metafields.my_fields.shipping.value }}<\/p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "35d1879a-7bee-47ab-afd9-7526f1b3a336": {
+          "type": "coffee_info",
+          "settings": {
+            "taste": "{{ product.metafields.my_fields.taste.value }}",
+            "strength": "{{ product.metafields.my_fields.strength.value }}",
+            "acidity": "{{ product.metafields.my_fields.acidity.value }}",
+            "type": "{{ product.metafields.my_fields.type.value }}",
+            "origin": "{{ product.metafields.my_fields.origin.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "subtitle",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share",
+        "100d1098-2a37-4530-90df-652c5f050289",
+        "35d1879a-7bee-47ab-afd9-7526f1b3a336"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

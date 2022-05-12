@@ -1,0 +1,43 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-test-product",
+      "blocks": {
+        "ec89323c-9c1e-450b-ba55-fdfcab9b966c": {
+          "type": "tax_notice_block",
+          "settings": {
+            "tax_notice_text": "tax included"
+          }
+        },
+        "e6f1af22-81ff-4d9d-8781-cf5ee6bcc28c": {
+          "type": "shipping_notice_block",
+          "settings": {
+            "shipping_notice_text": "ships in 7 days"
+          }
+        },
+        "1588a97a-631c-404d-9f29-e4f18f9a3ad1": {
+          "type": "product_price_block",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "ec89323c-9c1e-450b-ba55-fdfcab9b966c",
+        "e6f1af22-81ff-4d9d-8781-cf5ee6bcc28c",
+        "1588a97a-631c-404d-9f29-e4f18f9a3ad1"
+      ],
+      "settings": {
+        "show_reviews": true
+      }
+    },
+    "second": {
+      "type": "main-test-product",
+      "settings": {
+        "show_reviews": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "second"
+  ]
+}
